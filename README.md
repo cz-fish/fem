@@ -48,6 +48,8 @@ All registers as well as `acc` start initialized as `0` at the beginning of the 
 
 Programs are written in a plaintext file. Each line is one row of the program grid. Line endings are either \r, \n or both and line ending at the end of the file is optional.
 
+If there is a blank line in the program file, it denotes end of the program grid. Everything after the blank line is ignored (subject to future extensions).
+
 Each instruction is represented as 3 characters. Instructions on the row are separated by a single space. There can be optional blank spaces at the end of each line.
 
 The 3 characters of each instruction are representing, in order:
@@ -96,3 +98,10 @@ O02 V01 C   V11
 ```
 
 (grid size 4 x 5)
+
+## Extension Ideas
+* Add stacks (at least 2), and instructions push/pop
+* Interpreter flags determine the size of registers
+     * Also allow to work with characters instead of int
+     * Add a line to the end of the program file with the interpreter flags
+* (?) Division, modulo, bitwise logical operators
