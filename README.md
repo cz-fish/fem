@@ -87,7 +87,7 @@ V11 SC4 SE4 *E1 SC1 LE1 -B1 C   LC0
 
 ### Odd or even
 
-A list of numbers if provided on input 0. For each of them, the program will put on output 0 either `0` if the value is even, or `1` if it is odd.
+A list of numbers is provided on input 0. For each of them, the program will output to output 0 either `0` if the value is even, or `1` if it is odd.
 
 ```
 I01 . 1 SA1 V12
